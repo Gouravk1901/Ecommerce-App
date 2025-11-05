@@ -9,7 +9,6 @@ import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Orders from "./pages/Orders";
 import Contact from "./pages/contact";
-import ShowDetails from "./pages/ShowDetails";
 
 const router=createBrowserRouter([
     {
@@ -56,8 +55,8 @@ const router=createBrowserRouter([
                 path:"placeorder",
                 element:<PlaceOrder/>
             },{
-                path:"product/:id",
-                element:<ShowDetails/>
+                path:"product/:productId",
+                element:<Product/>
             },
 
             {
