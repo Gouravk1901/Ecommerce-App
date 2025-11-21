@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import { Outlet } from 'react-router-dom'
-import Home from './pages/Home'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Layout = () => {
   return (
     <>
+    <ToastContainer />
     <Navbar/>
      <SearchBar/>
     <Outlet/>
