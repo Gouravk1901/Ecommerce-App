@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm mx-10 '>
 
             <div>
-                <img src={assets.logo} className='mb-5 w-32' alt="" />
+                <img src={assets.vastrakit_logo} className='mb-5 w-45' alt="" />
                 <p className='w-full md:w-2/3 text-gray-600'>
                 Discover trendy fashion at the best prices. From casual wear to premium outfits, we bring styles that suit every occasion. Shop now and experience secure payments, fast delivery, and easy returns.
                 </p>
@@ -28,14 +28,14 @@ const Footer = () => {
                 <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
                 <ul className='flex flex-col gap-1 text-gray-600'>
                     <li>+1-212-456-7890</li>
-                    <li>contact@foreveryou.com</li>
+                    <li>contact@vastrakit.com</li>
                 </ul>
             </div>
         </div>
 
         <div>
-            <hr />
-            <p className='py-5 text-sm text-center'>Copyright 2025@ forever.com - All Right Reserved</p>
+            <hr className='mx-10'/>
+            <p className='py-5 text-sm text-center'>Copyright 2025@ vastrakit.com - All Right Reserved</p>
         </div>
       
     </div>

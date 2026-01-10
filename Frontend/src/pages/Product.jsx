@@ -11,7 +11,7 @@ const Product = () => {
   const [image,setImage] = useState('')
   const [size,setSize] = useState('')
 
-  const fetchProductData =  async => {
+  const fetchProductData =  async() => {
 
     products.map((item)=>{
       if (item._id === productId) {
@@ -27,7 +27,7 @@ const Product = () => {
   },[productId])
 
   return productData? (
-    <div className='border-t-2 pt-10 transition-opacity ease-in duration -500 opacity-100 mx-10'>
+    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100 mx-10'>
       
       {/* Product Data */}
       <div className='flex gap-12 sm:gap-12 flex-col sm:flex-row'>
@@ -51,11 +51,11 @@ const Product = () => {
       <div className='flex-1'>
         <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
         <div className='flex items-center gap-1 mt-2'>
-          <img src={assets.star_icon} alt="" className='w-3 5' />
-          <img src={assets.star_icon} alt="" className='w-3 5' />
-          <img src={assets.star_icon} alt="" className='w-3 5' />
-          <img src={assets.star_icon} alt="" className='w-3 5' />
-          <img src={assets.star_dull_icon} alt="" className='w-3 5' />
+          <img src={assets.star_icon} alt="" className='w-3.5' />
+          <img src={assets.star_icon} alt="" className='w-3.5' />
+          <img src={assets.star_icon} alt="" className='w-3.5' />
+          <img src={assets.star_icon} alt="" className='w-3.5' />
+          <img src={assets.star_dull_icon} alt="" className='w-3.5' />
           <p className='pl-2'>(122)</p>
         </div>
         <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
